@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS product_scores(
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  product_id INTEGER NOT NULL REFERENCES products(id) ON DELETE CASCADE,
+  score REAL NOT NULL CHECK(score>=0 AND score<=100),
+  margin_score REAL NOT NULL DEFAULT 0,
+  quality_score REAL NOT NULL DEFAULT 0,
+  shipping_score REAL NOT NULL DEFAULT 0,
+  risk_score REAL NOT NULL DEFAULT 0,
+  calculated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  UNIQUE(product_id)
+);

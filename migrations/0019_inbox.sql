@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS inbox(
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  source TEXT NOT NULL,
+  message_id TEXT NOT NULL,
+  payload_hash TEXT NOT NULL,
+  processed_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  UNIQUE(source, message_id)
+);
