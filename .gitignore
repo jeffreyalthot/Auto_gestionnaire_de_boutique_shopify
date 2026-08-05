@@ -1,0 +1,11 @@
+build/
+data/*.db
+data/*.db-*
+logs/
+.env
+config/app.json
+*.zip
+*.exe
+*.dll
+*.so
+*.dylib
