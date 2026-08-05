@@ -1,0 +1,2 @@
+#include "elit21/shopify/mutations/DiscountMutations.h"
+namespace elit21::shopify::mutations {graphql::GraphqlDocument DiscountMutations::document(){return graphql::GraphqlDocument("DiscountCodeBasicCreate",R"graphql(mutation DiscountCodeBasicCreate($basicCodeDiscount:DiscountCodeBasicInput!){discountCodeBasicCreate(basicCodeDiscount:$basicCodeDiscount){codeDiscountNode{id} userErrors{field message}}})graphql");}}

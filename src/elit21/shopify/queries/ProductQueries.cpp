@@ -1,0 +1,2 @@
+#include "elit21/shopify/queries/ProductQueries.h"
+namespace elit21::shopify::queries {graphql::GraphqlDocument ProductQueries::document(){return graphql::GraphqlDocument("Products",R"graphql(query Products($first:Int!,$after:String){products(first:$first,after:$after){edges{cursor node{id title handle status vendor productType updatedAt variants(first:100){edges{node{id sku price inventoryQuantity inventoryItem{id}}}}}}pageInfo{hasNextPage endCursor}}})graphql");}}

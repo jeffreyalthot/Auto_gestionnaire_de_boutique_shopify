@@ -1,0 +1,2 @@
+#include "elit21/shopify/mutations/WebhookMutations.h"
+namespace elit21::shopify::mutations {graphql::GraphqlDocument WebhookMutations::document(){return graphql::GraphqlDocument("WebhookSubscriptionCreate",R"graphql(mutation WebhookSubscriptionCreate($topic:WebhookSubscriptionTopic!,$webhookSubscription:WebhookSubscriptionInput!){webhookSubscriptionCreate(topic:$topic,webhookSubscription:$webhookSubscription){webhookSubscription{id} userErrors{field message}}})graphql");}}

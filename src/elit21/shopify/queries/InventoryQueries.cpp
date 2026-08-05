@@ -1,0 +1,2 @@
+#include "elit21/shopify/queries/InventoryQueries.h"
+namespace elit21::shopify::queries {graphql::GraphqlDocument InventoryQueries::document(){return graphql::GraphqlDocument("InventoryItems",R"graphql(query InventoryItems($first:Int!,$after:String){inventoryItems(first:$first,after:$after){nodes{id sku tracked inventoryLevels(first:20){nodes{id quantities(names:["available"]){name quantity} location{id name}}}}pageInfo{hasNextPage endCursor}}})graphql");}}

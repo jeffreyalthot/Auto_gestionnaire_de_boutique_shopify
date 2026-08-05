@@ -1,0 +1,2 @@
+#include "elit21/shopify/queries/OrderQueries.h"
+namespace elit21::shopify::queries {graphql::GraphqlDocument OrderQueries::document(){return graphql::GraphqlDocument("Orders",R"graphql(query Orders($first:Int!,$after:String,$query:String){orders(first:$first,after:$after,query:$query){nodes{id name displayFinancialStatus displayFulfillmentStatus currentTotalPriceSet{shopMoney{amount currencyCode}}}pageInfo{hasNextPage endCursor}}})graphql");}}

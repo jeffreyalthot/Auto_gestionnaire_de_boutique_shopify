@@ -1,0 +1,2 @@
+#include "elit21/shopify/mutations/ProductVariantMutations.h"
+namespace elit21::shopify::mutations {graphql::GraphqlDocument ProductVariantMutations::document(){return graphql::GraphqlDocument("ProductVariantsBulkUpdate",R"graphql(mutation ProductVariantsBulkUpdate($productId:ID!,$variants:[ProductVariantsBulkInput!]!){productVariantsBulkUpdate(productId:$productId,variants:$variants){productVariants{id} userErrors{field message}}})graphql");}}

@@ -1,0 +1,2 @@
+#include "elit21/shopify/mutations/ProductMediaMutations.h"
+namespace elit21::shopify::mutations {graphql::GraphqlDocument ProductMediaMutations::document(){return graphql::GraphqlDocument("ProductCreateMedia",R"graphql(mutation ProductCreateMedia($productId:ID!,$media:[CreateMediaInput!]!){productCreateMedia(productId:$productId,media:$media){media{id status} mediaUserErrors{field message}}})graphql");}}

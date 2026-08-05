@@ -1,0 +1,2 @@
+#include "elit21/shopify/mutations/FulfillmentOrderMutations.h"
+namespace elit21::shopify::mutations {graphql::GraphqlDocument FulfillmentOrderMutations::document(){return graphql::GraphqlDocument("FulfillmentOrderHold",R"graphql(mutation FulfillmentOrderHold($id:ID!,$reason:FulfillmentHoldReason!){fulfillmentOrderHold(id:$id,fulfillmentHold:{reason:$reason}){fulfillmentOrder{id status} userErrors{field message}}})graphql");}}

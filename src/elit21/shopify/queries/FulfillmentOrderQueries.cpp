@@ -1,0 +1,2 @@
+#include "elit21/shopify/queries/FulfillmentOrderQueries.h"
+namespace elit21::shopify::queries {graphql::GraphqlDocument FulfillmentOrderQueries::document(){return graphql::GraphqlDocument("FulfillmentOrders",R"graphql(query FulfillmentOrders($id:ID!){order(id:$id){fulfillmentOrders(first:50){nodes{id status requestStatus assignedLocation{name location{id}} lineItems(first:100){nodes{id remainingQuantity}}}}}})graphql");}}
