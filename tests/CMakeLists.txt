@@ -1,0 +1,8 @@
+file(GLOB_RECURSE ELIT21_EXTENDED_TEST_SOURCES CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/*.cpp")
+list(REMOVE_ITEM ELIT21_EXTENDED_TEST_SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/unit_tests.cpp" "${CMAKE_CURRENT_SOURCE_DIR}/extended_test_main.cpp")
+add_executable(elit21_extended_tests extended_test_main.cpp ${ELIT21_EXTENDED_TEST_SOURCES})
+target_include_directories(elit21_extended_tests PRIVATE ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_CURRENT_SOURCE_DIR}/mocks)
+target_link_libraries(elit21_extended_tests PRIVATE elit21_core)
+target_compile_definitions(elit21_extended_tests PRIVATE ELIT21_SOURCE_DIR="${CMAKE_SOURCE_DIR}")
+set_target_properties(elit21_extended_tests PROPERTIES UNITY_BUILD ON UNITY_BUILD_BATCH_SIZE 32)
+add_test(NAME elit21_extended_tests COMMAND elit21_extended_tests)
