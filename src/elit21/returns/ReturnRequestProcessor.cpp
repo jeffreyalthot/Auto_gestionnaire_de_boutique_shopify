@@ -1,0 +1,21 @@
+#include "elit21/returns/ReturnRequestProcessor.h"
+
+namespace elit21::returns {
+
+ReturnRequestProcessor::ReturnRequestProcessor()
+    : platform::BusinessComponent(
+          "ReturnRequestProcessor",
+          "return, refund and dispute coordination",
+          platform::BusinessComponentSpec{
+              "returns",
+              "command",
+              std::vector<std::string>{"order_id"},
+              true,
+              false,
+              4U * 1024U * 1024U}) {}
+
+platform::OperationResult ReturnRequestProcessor::execute(const platform::OperationContext& context) {
+    return executeBusiness(context);
+}
+
+} // namespace elit21::returns
