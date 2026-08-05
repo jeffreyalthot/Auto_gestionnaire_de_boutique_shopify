@@ -1,0 +1,7 @@
+{
+  "country": "CA",
+  "validate_postal_codes": true,
+  "screen_restricted_products": true,
+  "require_manual_review_when_uncertain": true,
+  "consumer_disclosure": true
+}

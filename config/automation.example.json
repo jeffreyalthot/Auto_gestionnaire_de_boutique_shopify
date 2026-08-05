@@ -1,0 +1,9 @@
+{
+  "catalog_sync": true,
+  "inventory_sync": true,
+  "price_sync": true,
+  "order_processing": true,
+  "tracking_sync": true,
+  "self_healing": true,
+  "human_approval_threshold_cad": 750
+}

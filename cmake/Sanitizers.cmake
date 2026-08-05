@@ -1,0 +1,5 @@
+option(ELIT21_ENABLE_ASAN "Enable address and undefined behavior sanitizers" OFF)
+if(ELIT21_ENABLE_ASAN AND NOT MSVC)
+ add_compile_options(-fsanitize=address,undefined -fno-omit-frame-pointer)
+ add_link_options(-fsanitize=address,undefined)
+endif()

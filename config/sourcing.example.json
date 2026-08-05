@@ -1,0 +1,8 @@
+{
+  "minimum_seller_score": 90,
+  "minimum_product_rating": 4.2,
+  "minimum_orders": 20,
+  "maximum_delivery_days": 45,
+  "destination": "CA",
+  "auto_publish": false
+}

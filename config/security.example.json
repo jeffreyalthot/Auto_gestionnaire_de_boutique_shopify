@@ -1,0 +1,7 @@
+{
+  "tls_required": true,
+  "encrypt_tokens_at_rest": true,
+  "webhook_replay_window_seconds": 300,
+  "audit_chain": true,
+  "live_order_kill_switch": true
+}

@@ -1,0 +1,7 @@
+{
+  "dry_run": false,
+  "live_orders": true,
+  "mock_external_apis": false,
+  "require_all_health_checks": true,
+  "approval_gate": true
+}

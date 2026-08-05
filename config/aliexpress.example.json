@@ -1,0 +1,10 @@
+{
+  "app_key_env": "ALIEXPRESS_APP_KEY",
+  "app_secret_env": "ALIEXPRESS_APP_SECRET",
+  "access_token_env": "ALIEXPRESS_ACCESS_TOKEN",
+  "iop_gateway": "https://api-sg.aliexpress.com/rest",
+  "top_gateway": "https://eco.taobao.com/router/rest",
+  "country": "CA",
+  "currency": "CAD",
+  "language": "EN"
+}

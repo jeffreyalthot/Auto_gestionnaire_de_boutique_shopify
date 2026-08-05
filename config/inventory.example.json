@@ -1,0 +1,7 @@
+{
+  "safety_buffer": 2,
+  "poll_seconds": 300,
+  "batch_size": 50,
+  "disable_on_supplier_out_of_stock": true,
+  "oversell_prevention": true
+}

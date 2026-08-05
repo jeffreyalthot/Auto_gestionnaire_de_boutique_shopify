@@ -1,0 +1,7 @@
+{
+  "fixed_position": true,
+  "refresh_ms": 500,
+  "event_lines": 8,
+  "show_accepted_rejected": true,
+  "unicode_fallback": true
+}

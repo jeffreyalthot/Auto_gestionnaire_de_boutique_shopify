@@ -1,0 +1,6 @@
+{
+  "dry_run": true,
+  "live_orders": false,
+  "mock_external_apis": true,
+  "verbose_terminal": true
+}

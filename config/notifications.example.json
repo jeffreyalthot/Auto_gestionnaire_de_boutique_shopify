@@ -1,0 +1,7 @@
+{
+  "email": false,
+  "webhook": false,
+  "terminal": true,
+  "notify_on_failure": true,
+  "notify_on_high_risk_order": true
+}

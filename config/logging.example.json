@@ -1,0 +1,7 @@
+{
+  "level": "info",
+  "structured_json": true,
+  "redact_secrets": true,
+  "file": "data/logs/elit21.jsonl",
+  "rotation_mb": 25
+}

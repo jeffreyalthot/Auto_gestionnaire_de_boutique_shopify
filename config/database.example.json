@@ -1,0 +1,8 @@
+{
+  "engine": "sqlite",
+  "path": "data/database/elit21.db",
+  "wal": true,
+  "busy_timeout_ms": 5000,
+  "foreign_keys": true,
+  "backup_interval_hours": 24
+}

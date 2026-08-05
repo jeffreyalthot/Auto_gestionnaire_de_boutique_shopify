@@ -1,0 +1,5 @@
+find_package(OpenSSL REQUIRED)
+find_package(SQLite3 REQUIRED)
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(JSONC REQUIRED IMPORTED_TARGET json-c)
+pkg_check_modules(LIBCURL REQUIRED IMPORTED_TARGET libcurl)

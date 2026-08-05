@@ -1,0 +1,9 @@
+{
+  "languages": [
+    "fr-CA",
+    "en-CA"
+  ],
+  "automatic_order_confirmation": true,
+  "automatic_tracking_updates": true,
+  "escalate_disputes": true
+}

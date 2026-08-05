@@ -1,0 +1,8 @@
+{
+  "name": "ELIT21 Autonomous Commerce Manager",
+  "mode": "dry_run",
+  "worker_threads": 2,
+  "poll_seconds": 60,
+  "live_orders": false,
+  "shutdown_timeout_seconds": 30
+}

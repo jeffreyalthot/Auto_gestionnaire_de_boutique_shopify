@@ -1,0 +1,7 @@
+{
+  "tracking_poll_seconds": 900,
+  "late_after_days": 7,
+  "lost_after_days": 45,
+  "create_shopify_fulfillment": true,
+  "notify_customer": true
+}

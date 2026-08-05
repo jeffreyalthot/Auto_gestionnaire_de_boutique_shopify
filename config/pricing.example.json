@@ -1,0 +1,8 @@
+{
+  "markup_percent_before_shipping": 100,
+  "formula": "supplier_cost * 2 + shipping",
+  "minimum_markup_percent": 100,
+  "shipping_added_after_markup": true,
+  "currency": "CAD",
+  "round_to_cents": true
+}
