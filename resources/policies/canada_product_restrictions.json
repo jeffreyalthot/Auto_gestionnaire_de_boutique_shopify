@@ -1,0 +1,12 @@
+{
+  "deny": [
+    "weapons",
+    "counterfeit goods",
+    "prescription drugs"
+  ],
+  "manual_review": [
+    "children products",
+    "radio equipment",
+    "cosmetics"
+  ]
+}

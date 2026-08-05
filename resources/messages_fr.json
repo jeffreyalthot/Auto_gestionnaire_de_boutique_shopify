@@ -1,0 +1,6 @@
+{
+  "order_received": "Votre commande a été reçue et est en traitement.",
+  "order_shipped": "Votre commande a été expédiée. Numéro de suivi : {tracking}.",
+  "order_delayed": "Votre commande subit un délai. Nous surveillons activement son acheminement.",
+  "order_delivered": "Votre commande est indiquée comme livrée."
+}

@@ -1,0 +1,4 @@
+{
+  "customer_window_days": 30,
+  "supplier_dispute_window_guard": true
+}

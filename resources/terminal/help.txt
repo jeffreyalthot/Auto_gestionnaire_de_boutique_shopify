@@ -1,0 +1,1 @@
+Use dry-run until Shopify and AliExpress credentials and permissions are verified. Live orders require the explicit kill-switch gate.

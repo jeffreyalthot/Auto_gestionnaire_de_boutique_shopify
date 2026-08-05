@@ -1,0 +1,5 @@
+{
+  "PAID": "supplier_order_pending",
+  "FULFILLED": "tracking_active",
+  "CANCELLED": "cancel_review"
+}

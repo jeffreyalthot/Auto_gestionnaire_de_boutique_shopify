@@ -1,0 +1,8 @@
+firearm
+weapon
+ammunition
+counterfeit
+medical prescription
+nicotine
+cannabis
+explosive

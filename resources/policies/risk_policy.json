@@ -1,0 +1,5 @@
+{
+  "maximum_automatic_order_cad": 750,
+  "block_duplicate_webhooks": true,
+  "address_validation": true
+}

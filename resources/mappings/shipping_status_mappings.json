@@ -1,0 +1,5 @@
+{
+  "WAIT_SELLER_SEND_GOODS": "pending",
+  "SELLER_PART_SEND_GOODS": "in_transit",
+  "FINISH": "delivered"
+}

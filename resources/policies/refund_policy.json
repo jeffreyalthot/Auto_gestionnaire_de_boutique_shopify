@@ -1,0 +1,5 @@
+{
+  "automatic_below_cad": 25,
+  "manual_review_above_cad": 25,
+  "evidence_required": true
+}

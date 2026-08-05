@@ -1,0 +1,13 @@
+[Unit]
+Description=ELIT21 Shopify AliExpress Autonomous Manager
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/elit21
+ExecStart=/opt/elit21/bin/elit21_shop_manager /opt/elit21/config/app.json
+Restart=on-failure
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target

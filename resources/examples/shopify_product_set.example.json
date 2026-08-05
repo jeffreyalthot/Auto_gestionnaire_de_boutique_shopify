@@ -1,0 +1,28 @@
+{
+  "title": "ELIT21 USB-C Travel Hub",
+  "description_html": "<p>Compact multiport hub selected for the Canadian catalog.</p>",
+  "vendor": "ELIT21",
+  "product_type": "Electronics Accessories",
+  "source_product_id": "1005007654321098",
+  "publish": false,
+  "variants": [
+    {
+      "option_name": "Color",
+      "option_value": "Space Gray",
+      "sku": "ELIT21-HUB-GRAY",
+      "source_sku_id": "12000041876543210",
+      "supplier_cost_cad": 18.50,
+      "price_cad": 37.00,
+      "inventory": 25
+    },
+    {
+      "option_name": "Color",
+      "option_value": "Silver",
+      "sku": "ELIT21-HUB-SILVER",
+      "source_sku_id": "12000041876543211",
+      "supplier_cost_cad": 19.25,
+      "price_cad": 38.50,
+      "inventory": 18
+    }
+  ]
+}

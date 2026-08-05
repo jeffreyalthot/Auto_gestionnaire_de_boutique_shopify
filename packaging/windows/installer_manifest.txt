@@ -1,0 +1,5 @@
+bin/elit21_shop_manager.exe
+config/
+resources/
+migrations/
+docs/

@@ -1,0 +1,72 @@
+[
+  {
+    "topic": "orders/paid",
+    "subscription_removed": false,
+    "http_status": 200,
+    "response_time_ms": 180,
+    "retry_count": 0
+  },
+  {
+    "topic": "products/update",
+    "subscription_removed": false,
+    "http_status": 202,
+    "response_time_ms": 240,
+    "retry_count": 0
+  },
+  {
+    "topic": "inventory_levels/update",
+    "subscription_removed": false,
+    "http_status": 200,
+    "response_time_ms": 310,
+    "retry_count": 0
+  },
+  {
+    "topic": "fulfillments/update",
+    "subscription_removed": false,
+    "http_status": 200,
+    "response_time_ms": 420,
+    "retry_count": 0
+  },
+  {
+    "topic": "refunds/create",
+    "subscription_removed": false,
+    "http_status": 200,
+    "response_time_ms": 510,
+    "retry_count": 1
+  },
+  {
+    "topic": "orders/cancelled",
+    "subscription_removed": false,
+    "http_status": 200,
+    "response_time_ms": 650,
+    "retry_count": 0
+  },
+  {
+    "topic": "customers/data_request",
+    "subscription_removed": false,
+    "http_status": 200,
+    "response_time_ms": 720,
+    "retry_count": 0
+  },
+  {
+    "topic": "customers/redact",
+    "subscription_removed": false,
+    "http_status": 200,
+    "response_time_ms": 840,
+    "retry_count": 0
+  },
+  {
+    "topic": "shop/redact",
+    "subscription_removed": false,
+    "http_status": 200,
+    "response_time_ms": 900,
+    "retry_count": 0
+  },
+  {
+    "topic": "products/delete",
+    "subscription_removed": false,
+    "http_status": 200,
+    "response_time_ms": 1100,
+    "retry_count": 0
+  }
+]
