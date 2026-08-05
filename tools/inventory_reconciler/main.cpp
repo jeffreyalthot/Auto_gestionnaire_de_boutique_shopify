@@ -1,0 +1,4 @@
+#include "elit21/config/Config.h"
+#include "elit21/storage/Database.h"
+#include <iostream>
+int main(int argc,char**argv){auto c=elit21::Config::load(argc>1?argv[1]:"config/app.json");if(!c){std::cerr<<c.error()<<'\n';return 2;}elit21::Database db;if(auto r=db.open(c.value().app.database);!r){std::cerr<<r.error()<<'\n';return 3;}if(auto r=db.migrateDirectory(c.value().migrations_dir);!r){std::cerr<<r.error()<<'\n';return 4;}auto variants=db.variants(10000);if(!variants){std::cerr<<variants.error()<<'\n';return 5;}long long active=0,out=0,unmapped=0;for(const auto&v:variants.value()){if(v.stock>0)++active;else ++out;if(v.shopify_inventory_item_id.empty())++unmapped;}std::cout<<"variants="<<variants.value().size()<<"\nactive="<<active<<"\nout_of_stock="<<out<<"\nunmapped_shopify="<<unmapped<<'\n';return 0;}

@@ -1,0 +1,5 @@
+#include "elit21/config/Config.h"
+#include <sqlite3.h>
+#include <iostream>
+#include <string>
+int main(int argc,char**argv){auto c=elit21::Config::load(argc>1?argv[1]:"config/app.json");if(!c){std::cerr<<c.error()<<'\n';return 2;}sqlite3*db=nullptr;if(sqlite3_open_v2(c.value().app.database.c_str(),&db,SQLITE_OPEN_READONLY,nullptr)!=SQLITE_OK){std::cerr<<(db?sqlite3_errmsg(db):"open failed")<<'\n';if(db)sqlite3_close(db);return 3;}const char*sql="SELECT name FROM sqlite_master WHERE type='table' ORDER BY name";sqlite3_stmt*st=nullptr;sqlite3_prepare_v2(db,sql,-1,&st,nullptr);while(sqlite3_step(st)==SQLITE_ROW){const char*name=reinterpret_cast<const char*>(sqlite3_column_text(st,0));std::string count_sql="SELECT COUNT(*) FROM \""+std::string(name)+"\"";sqlite3_stmt*cs=nullptr;long long count=0;if(sqlite3_prepare_v2(db,count_sql.c_str(),-1,&cs,nullptr)==SQLITE_OK&&sqlite3_step(cs)==SQLITE_ROW)count=sqlite3_column_int64(cs,0);sqlite3_finalize(cs);std::cout<<name<<"="<<count<<'\n';}sqlite3_finalize(st);sqlite3_close(db);return 0;}
