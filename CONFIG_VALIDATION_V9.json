@@ -1,0 +1,24 @@
+{
+  "valid":true,
+  "production_check":false,
+  "configuration":{
+    "name":"ELIT21 Shopify AliExpress Autonomous Manager",
+    "dry_run":true,
+    "live_orders":false,
+    "shopify_shop":"your-shop",
+    "shopify_api_version":"2026-07",
+    "shopify_configured":false,
+    "aliexpress_configured":false,
+    "country":"CA",
+    "currency":"CAD",
+    "markup_percent_before_shipping":100.0,
+    "verify_tls":true,
+    "poll_seconds":60,
+    "project_root":"\/mnt\/data\/ELIT21_Shopify_AliExpress_Autonomous_Manager-v9.0.0-SHOPIFY-CONTRACTED",
+    "migrations_dir":"\/mnt\/data\/ELIT21_Shopify_AliExpress_Autonomous_Manager-v9.0.0-SHOPIFY-CONTRACTED\/migrations",
+    "database":"\/mnt\/data\/v9final_validation\/data\/elit21_v9_validation.db"
+  },
+  "errors":[],
+  "warnings":[]
+}
+VALID

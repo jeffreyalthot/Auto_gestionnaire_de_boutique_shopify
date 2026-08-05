@@ -1,0 +1,88 @@
+ELIT21 SHOPIFY × ALIEXPRESS AUTONOMOUS MANAGER
+VALIDATION REPORT — VERSION 5.0.0 SHOPIFY AUTONOMY
+==============================================================
+
+Date de validation             : 2026-08-05
+Mode de validation             : Release C++20, hors connexion
+Projet                         : 82.2 %
+Shopify                        : 91.5 %
+Tests                          : 93.6 %
+Structure                      : 100.0 %
+
+CONSERVATION ET STRUCTURE
+-------------------------
+Fichiers de la v4 de référence : 1944
+Fichiers v4 retirés            : 0
+Fichiers v5 analysés           : 1957
+Dossiers                       : 219
+Fichiers .cpp                  : 926
+Fichiers .h                    : 841
+En-têtes include/elit21        : 834
+Sources src/elit21             : 834
+En-têtes sans .cpp             : 0
+Fichiers vides hors .gitkeep   : 0
+TODO/FIXME/PLACEHOLDER         : 0
+Applications                   : 15
+Outils                         : 10
+Fichiers SQL                   : 34
+Migrations versionnées         : 33
+Fichiers de tests C++          : 67
+
+COMPILATION ET TESTS
+--------------------
+Configuration CMake Release    : SUCCESS
+Compilation bibliothèque      : SUCCESS
+Compilation 15 applications   : SUCCESS
+Compilation 10 outils         : SUCCESS
+Compilation tests             : SUCCESS
+CTest                          : 2/2 PASS
+Temps CTest observé           : environ 1 seconde
+
+VALIDATIONS OPÉRATIONNELLES HORS CONNEXION
+------------------------------------------
+Configuration locale           : PASS
+Centre de contrôle Shopify     : PASS (commande validate)
+Migrations SQLite              : PASS, 33 migrations appliquées
+Webhook produit signé          : HTTP 202
+Rejeu du même webhook          : HTTP 200 duplicate
+Tâche persistée                : shopify_product_updated / pending / 1
+Sauvegarde sqlite3_backup       : PASS
+PRAGMA integrity_check         : ok
+Empreinte de sauvegarde         : SHA-256 générée
+Simulation financière          : 10 × 2 + 3 = 23 CAD
+
+COUVERTURE SHOPIFY V5
+---------------------
+- OAuth, états à usage unique, scopes, jetons chiffrés et réautorisation.
+- Versions trimestrielles, domaines et endpoints validés.
+- Modèles typés et sérialisation JSON.
+- Transport GraphQL, coût, throttling, Retry-After, pagination et erreurs utilisateur.
+- Services produits, variantes, inventaire, commandes, clients, fulfillment,
+  publications, remises, fichiers, retours, remboursements et webhooks.
+- Bulk Operations, JSONL en flux, téléchargements atomiques et staged uploads.
+- Webhooks HMAC idempotents, confidentialité et files persistantes.
+- Checkpoints de synchronisation et centre de contrôle terminal.
+
+RÈGLE DE PRIX VALIDÉE
+---------------------
+prix_avant_livraison = coût_fournisseur × 2
+prix_final            = prix_avant_livraison + livraison
+
+Exemple : coût 10,00 CAD; marge 10,00 CAD; avant livraison 20,00 CAD;
+livraison 3,00 CAD; prix final 23,00 CAD.
+
+LIMITES DE LA VALIDATION
+------------------------
+Aucun appel réel Shopify ou AliExpress n'a été effectué, car aucun compte, jeton
+de production, permission protégée ou moyen de paiement fournisseur n'a été fourni.
+La validation certifie la compilation, les scénarios locaux et la cohérence du code,
+mais pas une transaction commerciale réelle. Les valeurs sûres restent dry_run=true
+et live_orders=false.
+
+COPIE DE LIVRAISON INDÉPENDANTE
+--------------------------------
+Configuration depuis la copie finale : SUCCESS
+Compilation depuis zéro             : SUCCESS
+CTest depuis la copie finale         : 2/2 PASS
+Artéfacts build/runtime dans source  : 0
+

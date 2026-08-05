@@ -1,0 +1,87 @@
+ELIT21 SHOPIFY x ALIEXPRESS AUTONOMOUS MANAGER
+VALIDATION REPORT — VERSION 9.0.0 SHOPIFY CONTRACTED
+Date: 2026-08-05
+
+BUILD
+-----
+CMake Release configuration              PASS
+C++20 clean build                         PASS
+Unity batch size                          16
+Parallel build jobs                       4
+Observed peak RSS                         330940 KiB
+Core static library                       PASS
+Applications                              21
+Tools                                     12
+CTest                                     2/2 PASS
+
+RUNTIME PATHS
+-------------
+Absolute config path                      PASS
+Project root inference                    PASS
+Database/log/data path resolution         PASS
+Migration path resolution                 PASS
+Launch from arbitrary working directory   PASS
+Displayed application version             9.0.0
+
+SHOPIFY CONTRACT
+----------------
+API version                               2026-07
+Contract audit                            100/100 PASS
+Shopify source files scanned              330
+Contract errors                           0
+Contract warnings                         0
+Inventory changeFromQuantity              PASS
+Inventory @idempotent directive           PASS
+productSet plan                            PASS
+GraphQL circuit breaker                    PASS
+Webhook SLO monitor                        PASS
+
+DATABASE
+--------
+Migrations applied                        38
+Tables                                    52
+PRAGMA integrity_check                    ok
+
+STRUCTURE
+---------
+Files before final report refresh         2070
+Directories                               229
+.cpp files                                957
+.h files                                  864
+SQL files                                 39
+include/elit21 headers                     857
+Headers without matching .cpp             0
+Empty source files                         0
+TODO/FIXME/PLACEHOLDER in .cpp/.h          0
+Files removed from v8                      0
+
+WEBHOOK SLO SAMPLE
+------------------
+Deliveries                                10
+Failures                                  0
+Failure rate                              0.0 %
+p90 response time                         900.0 ms
+Maximum retry count                       1
+Removed subscriptions                     0
+Healthy                                   YES
+
+PRICING INVARIANT
+-----------------
+Supplier cost                             10.00 CAD
+100% markup before shipping               10.00 CAD
+Price before shipping                     20.00 CAD
+Shipping                                   3.00 CAD
+Final Shopify price                       23.00 CAD
+
+SAFE DEFAULTS
+-------------
+dry_run                                   true
+live_orders                               false
+verify_tls                                true
+country                                   CA
+currency                                  CAD
+markup_percent_before_shipping            100
+
+LIMITATIONS
+-----------
+No live Shopify or AliExpress transaction was executed because credentials and approved accounts are not bundled. A full sanitizer build was attempted but did not finish within the execution window.

@@ -1,0 +1,71 @@
+ELIT21 SHOPIFY x ALIEXPRESS AUTONOMOUS MANAGER 3.0.0
+VALIDATION REPORT
+============================================================
+
+PRESERVATION
+- Version 2 source files missing: 0
+- New files since version 2: 19
+
+SOURCE
+- Package files: 1925
+- C++ implementation files: 919
+- C++ header files: 836
+- src/elit21 .cpp files: 829
+- Dedicated implementations: 130
+- Domain-aware shared adapters: 699
+- Header/CPP pairs missing: 0
+- Weighted source depth: 76.4%
+- TODO/FIXME markers: 0
+- Zero-length non-placeholder files: 0
+
+BUILD
+- CMake configure Release: SUCCESS
+- C++20 build: SUCCESS
+- Core static library: SUCCESS
+- 14 service applications: SUCCESS
+- 9 operational tools: SUCCESS
+
+TESTS
+- C++ test files: 67
+- Files using substantive scenarios: 61 (91.0%)
+- stableHash-only tests: 0
+- CTest: 2/2 PASSED
+- Migration checksum mismatch test: PASSED
+- Task deduplication/recovery test: PASSED
+- Exact 64-bit Shopify ID test: PASSED
+- AES-256-GCM/tamper/redaction test: PASSED
+
+RUNTIME SMOKE TESTS
+- Manager startup and /health: SUCCESS
+- Fixed terminal dashboard: SUCCESS
+- SIGINT clean shutdown: SUCCESS
+- Scheduler duplicate suppression: SUCCESS
+- Worker task dispatch: SUCCESS
+- Webhook valid HMAC: HTTP 202
+- Webhook duplicate: HTTP 200
+- Webhook invalid HMAC: HTTP 401
+- Webhook -> worker -> local order -> dry-run supplier order: SUCCESS
+
+DATABASE
+- Versioned migrations: 32
+- WAL and foreign keys: ENABLED
+- Active task deduplication: ENABLED
+- Stale worker lease recovery: ENABLED
+- Dead-letter persistence: ENABLED
+- Audit SHA-256 chain: ENABLED
+
+PRICING INVARIANT
+- Supplier markup before shipping: 100% minimum
+- Price before shipping: supplier cost x 2
+- Final price: supplier cost x 2 + shipping
+- Verified case: 10.00 CAD x 2 + 3.00 CAD = 23.00 CAD
+
+SAFE DEFAULTS
+- dry_run=true
+- live_orders=false
+- verify_tls=true
+- country=CA
+- currency=CAD
+
+FINAL LOCAL RESULT: SUCCESS
+LIVE PLATFORM VALIDATION: REQUIRES AUTHORIZED SHOPIFY/ALIEXPRESS ACCOUNTS

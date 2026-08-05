@@ -1,0 +1,71 @@
+ELIT21 SHOPIFY × ALIEXPRESS AUTONOMOUS MANAGER
+VALIDATION REPORT — VERSION 7.0.0 SHOPIFY RESILIENT
+====================================================
+
+PROJECT
+-------
+Root                          : ELIT21_Shopify_AliExpress_Autonomous_Manager-v7.0.0-SHOPIFY-RESILIENT
+Structure                     : PASS
+Files analyzed                : 2013
+Directories                   : 223
+C++ sources                   : 942
+Headers                       : 854
+C++ tests                     : 67
+Apps                          : 17
+Tools                         : 11
+SQL files                     : 37
+
+SOURCE PRESERVATION
+-------------------
+V6 files in uploaded archive  : 1990
+V6 files removed              : 0
+New V7 paths                  : 23
+Header/CPP missing pairs      : 0
+Empty C++/header files        : 0
+TODO/FIXME/PLACEHOLDER        : 0
+
+CLEAN RELEASE BUILD
+-------------------
+CMake configure               : PASS
+C++20 Release build           : PASS
+Core library                  : PASS
+17 applications               : PASS
+11 terminal tools             : PASS
+CTest                         : 2/2 PASS
+
+DATABASE
+--------
+Fresh migration               : PASS
+schema_migrations             : 36
+PRAGMA integrity_check        : ok
+shopify_idempotency_keys      : PRESENT
+shopify_webhook_ordering      : PRESENT
+shopify_reconciliation_requests: PRESENT
+shopify_api_version_guard     : PRESENT
+variants.shopify_quantity     : PRESENT
+
+CONFIGURATION
+-------------
+Config validator              : PASS
+dry_run                       : true
+live_orders                   : false
+verify_tls                    : true
+country                       : CA
+currency                      : CAD
+markup before shipping        : 100%
+Production readiness          : EXPECTED NOT READY
+Reason                        : no real Shopify/AliExpress secrets in source archive
+
+PROGRESS
+--------
+Global weighted               : 83.3%
+Shopify                       : 93.4%
+Source                        : 81.8%
+Tests                         : 94.0%
+Configuration                 : 91.1%
+Structure                     : 100.0%
+
+RESULT
+------
+LOCAL SOURCE VALIDATION       : SUCCESS
+PRODUCTION CERTIFICATION      : NOT CLAIMED

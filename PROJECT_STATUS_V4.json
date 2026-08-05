@@ -1,0 +1,48 @@
+{
+  "project": "ELIT21_Shopify_AliExpress_Autonomous_Manager-v4.0.0-SHOPIFY-ADVANCED",
+  "version": "4.0.0",
+  "generated_at": "2026-08-05T08:47:00-04:00",
+  "structure_percentage": 100.0,
+  "weighted_project_percentage": 79.24,
+  "weighted_shopify_percentage": 78.48,
+  "files_analyzed": 1944,
+  "directories": 218,
+  "cpp_files": 923,
+  "header_files": 839,
+  "source_cpp": 832,
+  "dedicated_source_cpp": 130,
+  "shared_business_adapters": 702,
+  "test_cpp": 67,
+  "real_scenario_tests": 62,
+  "empty_files": 0,
+  "new_files_from_v3": 19,
+  "modified_files_from_v3": 22,
+  "unchanged_files_from_v3": 1903,
+  "deleted_files_from_v3": 0,
+  "build": "SUCCESS",
+  "ctest": "2/2 PASS",
+  "runtime_webhook_e2e": "PASS",
+  "pricing_rule": "supplier_cost * 2 + shipping",
+  "default_mode": {
+    "dry_run": true,
+    "live_orders": false
+  },
+  "category_progress": {
+    "build": 92.87,
+    "configuration": 91.31,
+    "database": 96.0,
+    "documentation": 88.0,
+    "executables": 82.89,
+    "reports": 88.06,
+    "resources": 86.77,
+    "runtime": 100.0,
+    "shopify": 78.14,
+    "source": 76.62,
+    "tests": 91.3
+  },
+  "limitations": [
+    "Live Shopify calls not executed without credentials",
+    "Live AliExpress ordering not executed without approved account and payment",
+    "Shared business adapters remain candidates for dedicated implementations"
+  ]
+}

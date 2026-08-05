@@ -1,0 +1,11 @@
+{
+  "deliveries":10,
+  "successful":10,
+  "failed":0,
+  "removed_subscriptions":0,
+  "maximum_retry_count":1,
+  "failure_rate_percent":0.0,
+  "p90_response_time_ms":900.0,
+  "healthy":true,
+  "findings":[]
+}

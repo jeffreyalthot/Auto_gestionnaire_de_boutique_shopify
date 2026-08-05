@@ -1,0 +1,1 @@
+MIGRATIONS APPLIED: /mnt/data/ELIT21_Shopify_AliExpress_Autonomous_Manager-v9.0.0-SHOPIFY-CONTRACTED/migrations

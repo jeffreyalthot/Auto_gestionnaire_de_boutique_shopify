@@ -1,0 +1,46 @@
+ELIT21 SHOPIFY ALIEXPRESS AUTONOMOUS MANAGER — VALIDATION V4.0.0
+==================================================================
+Generated: 2026-08-05
+
+SOURCE PACKAGE
+Files analyzed                         : 1944
+Directories                            : 218
+C++ source files                       : 923
+C/C++ headers                          : 839
+Missing header/source counterparts      : 0
+Empty invalid files                    : 0
+Files deleted from v3                  : 0
+
+PROGRESS
+Structure                              : 100.0%
+Weighted project progress              : 79.2%
+Weighted Shopify progress              : 78.5%
+Dedicated src implementations          : 130
+Shared business adapters               : 702
+
+BUILD AND TESTS
+CMake Release configure                : SUCCESS
+C++20 complete build                   : SUCCESS
+CTest                                  : 2/2 PASS
+Configuration validator                : PASS
+Project progress analyzer              : PASS
+
+SHOPIFY OFFLINE END-TO-END
+Valid HMAC webhook                     : HTTP 202
+Duplicate webhook                      : HTTP 200
+Invalid HMAC                           : HTTP 401
+Webhook task                           : completed
+Supplier order task                    : completed
+Order status                           : supplier_ordered
+Supplier order ID                      : DRYRUN-9007199254740993
+64-bit Shopify ID preservation         : PASS
+Migration 0033                         : PASS
+
+PRICING INVARIANT
+Supplier cost                          : 10.00 CAD
+100% markup before shipping            : 20.00 CAD
+Shipping                               : 3.00 CAD
+Final Shopify price                    : 23.00 CAD
+
+LIMITATION
+No live Shopify or AliExpress transaction was executed. Real mode requires valid credentials, scopes, HTTPS webhook address, AliExpress Dropshipping approval and supplier payment capability.

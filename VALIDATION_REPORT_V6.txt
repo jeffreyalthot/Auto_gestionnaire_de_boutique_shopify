@@ -1,0 +1,47 @@
+ELIT21 SHOPIFY × ALIEXPRESS — VALIDATION V6.0.0
+===================================================
+
+BUILD
+- CMake Release C++20: SUCCESS
+- Library, 16 applications and 11 tools: SUCCESS
+- CTest: 2/2 PASS
+
+OPERATIONAL LOCAL TESTS
+- Pricing simulation 10 × 2 + 3 = 23 CAD: PASS
+- Configuration validation: PASS
+- SQLite migrations: PASS (36 SQL files)
+- SQLite backup through sqlite3_backup: PASS
+- PRAGMA integrity_check: ok
+- Shopify app TOML generation: PASS
+- OAuth callback HMAC/state/replay: PASS
+- Order admission/state/privacy: PASS
+
+STRUCTURE
+- Files analyzed: 1989
+- Directories: 222
+- C++ files: 935
+- Header files: 848
+- C++ test files: 67
+- include/elit21 headers without matching cpp: 0
+- Empty source/header files: 0
+- TODO/FIXME/PLACEHOLDER in cpp/h: 0
+- Removed v5 files: 0
+
+PROGRESS
+- Project: 82.9%
+- Shopify: 93.2%
+- Source: 81.4%
+- Tests: 93.9%
+- Configuration: 91.1%
+- Structure: 100.0%
+
+SAFE DEFAULTS
+- dry_run=true
+- live_orders=false
+- verify_tls=true
+- country=CA
+- currency=CAD
+- markup_percent_before_shipping=100
+
+EXTERNAL LIMIT
+No live Shopify or AliExpress commercial transaction was executed because production credentials, approved accounts and supplier payment were not supplied.

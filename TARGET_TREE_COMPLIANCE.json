@@ -1,0 +1,10 @@
+{
+  "target_tree_structure_preserved": true,
+  "v2_files_missing": [],
+  "v2_missing_count": 0,
+  "header_cpp_pairs_missing": [],
+  "header_cpp_pairs_missing_count": 0,
+  "old_reported_target_files_missing": 0,
+  "old_reported_target_directories_missing": 0,
+  "notes": "No file from the v2 source package was removed; runtime databases, logs and build artifacts are intentionally excluded from the clean source archive."
+}

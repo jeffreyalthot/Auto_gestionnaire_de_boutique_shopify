@@ -1,0 +1,74 @@
+{
+  "version": 6,
+  "configurePresets": [
+    {
+      "name": "linux-release",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/linux-release",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "ELIT21_BUILD_TESTS": "ON"
+      }
+    },
+    {
+      "name": "windows-msys2-mingw64",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/windows-msys2-mingw64",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "ELIT21_BUILD_TESTS": "ON"
+      }
+    },
+    {
+      "name": "windows-msvc",
+      "generator": "Visual Studio 17 2022",
+      "architecture": "x64",
+      "binaryDir": "${sourceDir}/build/windows-msvc",
+      "cacheVariables": {
+        "ELIT21_BUILD_TESTS": "ON"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "linux-release-build",
+      "configurePreset": "linux-release",
+      "jobs": 2
+    },
+    {
+      "name": "windows-msys2-mingw64-build",
+      "configurePreset": "windows-msys2-mingw64",
+      "jobs": 2
+    },
+    {
+      "name": "windows-msvc-build",
+      "configurePreset": "windows-msvc",
+      "configuration": "Release",
+      "jobs": 2
+    }
+  ],
+  "testPresets": [
+    {
+      "name": "linux-release-test",
+      "configurePreset": "linux-release",
+      "output": {
+        "outputOnFailure": true
+      }
+    },
+    {
+      "name": "windows-msys2-mingw64-test",
+      "configurePreset": "windows-msys2-mingw64",
+      "output": {
+        "outputOnFailure": true
+      }
+    },
+    {
+      "name": "windows-msvc-test",
+      "configurePreset": "windows-msvc",
+      "configuration": "Release",
+      "output": {
+        "outputOnFailure": true
+      }
+    }
+  ]
+}

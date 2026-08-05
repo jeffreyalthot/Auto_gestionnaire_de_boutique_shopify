@@ -1,0 +1,57 @@
+ELIT21 v8.0.0 SHOPIFY GOVERNED — RAPPORT DE VALIDATION
+========================================================
+Date UTC : 2026-08-05T18:50:56.385456+00:00
+
+STRUCTURE
+---------
+Fichiers analysés                  : 2034
+Dossiers                           : 224
+Fichiers .cpp                      : 948
+Fichiers .h                        : 859
+En-têtes include/elit21            : 852
+En-têtes sans .cpp                 : 0
+Applications                       : 18
+Outils                             : 11
+Migrations SQL                     : 38
+Fichiers v7 retirés                : 0
+Fichiers v8 ajoutés                : 21
+Fichiers source vides              : 0
+TODO/FIXME/PLACEHOLDER              : 0
+
+BUILD PROPRE
+------------
+CMake Release                      : SUCCESS
+Compilateur                        : GNU C++ 14.2.0
+Standard                           : C++20
+Bibliothèque centrale              : SUCCESS
+Applications                       : SUCCESS (18)
+Outils                             : SUCCESS (11)
+CTest                              : 2/2 PASS
+
+VALIDATIONS OPÉRATIONNELLES
+---------------------------
+Configuration dry-run              : VALID
+Migrations SQLite                  : 37 appliquées
+PRAGMA integrity_check             : ok
+Tables SQLite                      : 49
+Audit gouvernance hors connexion   : score 91/100
+Historique gouvernance             : persisté
+Génération shopify.app.toml        : PASS
+Règle prix 10 × 2 + 3              : 23 CAD — PASS
+Validation modèles Shopify         : PASS
+Plan registre webhook              : PASS
+
+SÉCURITÉ DE LIVRAISON
+---------------------
+dry_run                            : true
+live_orders                        : false
+verify_tls                         : true
+country                            : CA
+currency                           : CAD
+markup_percent_before_shipping     : 100
+
+LIMITATION
+----------
+Les tests Shopify/AliExpress commerciaux réels nécessitent des comptes,
+jetons, permissions, webhooks HTTPS et paiements contrôlés. Ils ne sont
+pas simulés comme s'ils avaient été validés en production.

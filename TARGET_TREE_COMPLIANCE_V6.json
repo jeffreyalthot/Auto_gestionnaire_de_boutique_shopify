@@ -1,0 +1,14 @@
+{
+  "version": "6.0.0",
+  "v5_files": 1957,
+  "v5_files_missing": 0,
+  "missing_v5_paths": [],
+  "headers_include_elit21": 841,
+  "headers_without_cpp": 0,
+  "missing_cpp_paths": [],
+  "empty_cpp_h": 0,
+  "empty_paths": [],
+  "todo_fixme_placeholder_in_cpp_h": 0,
+  "marker_paths": [],
+  "structure_complete": true
+}

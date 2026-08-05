@@ -1,0 +1,72 @@
+{
+  "project": "ELIT21 Shopify AliExpress Autonomous Manager",
+  "version": "3.0.0",
+  "generated_at_utc": "2026-08-05T08:03:57Z",
+  "baseline_from_uploaded_tree": {
+    "files": 1913,
+    "src_cpp": 824,
+    "dedicated_implementations": 27,
+    "generic_skeletons": 797,
+    "weighted_source_percent": 27,
+    "weighted_tests_percent": 21,
+    "release_build": "SUCCESS",
+    "ctest": "2/2"
+  },
+  "v3": {
+    "package_files": 1925,
+    "cpp_files": 919,
+    "header_files": 836,
+    "src_cpp": 829,
+    "src_headers": 829,
+    "header_cpp_pairs_missing": 0,
+    "dedicated_src_implementations": 130,
+    "domain_aware_shared_adapters": 699,
+    "old_hash_only_generic_skeletons": 0,
+    "weighted_source_percent": 76.4,
+    "test_cpp_files": 67,
+    "test_files_using_substantive_scenarios": 61,
+    "test_scenario_file_ratio_percent": 91.0,
+    "mock_cpp_files": 6,
+    "stablehash_only_tests": 0,
+    "migrations": 32,
+    "applications": 14,
+    "tools": 9,
+    "zero_length_non_placeholders": 0,
+    "todo_fixme_markers": 0,
+    "preserved_v2_files_missing": 0,
+    "new_files_since_v2": 19
+  },
+  "validation": {
+    "cmake_release": "SUCCESS",
+    "link_all_apps_tools": "SUCCESS",
+    "ctest": "2/2 PASSED",
+    "manager_start_health_sigint": "SUCCESS",
+    "webhook_end_to_end": {
+      "valid_hmac_http": 202,
+      "duplicate_http": 200,
+      "invalid_hmac_http": 401,
+      "webhook_status": "processed",
+      "order_status": "supplier_ordered",
+      "supplier_id_prefix": "DRYRUN-"
+    },
+    "scheduler_active_task_deduplication": "SUCCESS",
+    "worker_dispatch": "SUCCESS",
+    "migration_checksum_guard": "TESTED",
+    "exact_64bit_shopify_ids": "TESTED",
+    "pricing_case": "10.00 x 2 + 3.00 = 23.00 CAD"
+  },
+  "safe_defaults": {
+    "dry_run": true,
+    "live_orders": false,
+    "verify_tls": true,
+    "country": "CA",
+    "currency": "CAD",
+    "markup_percent_before_shipping": 100
+  },
+  "limitations": [
+    "Live Shopify/AliExpress calls require real authorized credentials and platform permissions.",
+    "AliExpress supplier payment, CAPTCHA, account review and disputes can require human interaction.",
+    "699 leaf classes use a shared domain-aware engine rather than independent bespoke backends.",
+    "Local tests do not certify production infrastructure, taxes, customs or product legality."
+  ]
+}
